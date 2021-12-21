@@ -14,5 +14,10 @@
 
 # Создать рецепт своего бургера, по вашему вкусу.
 # Если не хватает инградиентов - создать соответствующие функции в модуле my_burger
-
+import dick as big
 # TODO здесь ваш код
+big.cook_double_krempai()
+
+big.add_bread()
+big.add_tomato()
+big.add_cutlet()
