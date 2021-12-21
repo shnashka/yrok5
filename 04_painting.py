@@ -26,13 +26,15 @@
 # Задержку в анимировании все равно надо ставить, пусть даже 0.01 сек - так библиотека устойчивей работает.
 
 import simple_draw as sd
-#import pick.rainbow as r
-#import pick.smile as s
-import pick.wall as w
-sd.resolution = (1400, 1800)
 
-#r(1000, 1000)
-#s(100, 100)
+from pick.shapes import triangle_2, octagon_2
 
+sd.resolution = (1400, 800)
+
+point_0 = sd.get_point(400, 100)
+triangle_2(point_0, 0, 80)
+
+point_0 = sd.get_point(400, 500)
+octagon_2(point_0, 0, 80)
 
 sd.pause()
